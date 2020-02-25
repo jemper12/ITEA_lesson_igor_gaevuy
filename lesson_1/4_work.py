@@ -1,6 +1,6 @@
-def bank(summ, year, percent):
+def bank(summ=68000, year=2, percent=13):
     a = summ + summ * percent * (365 * year) / 365 / 100
-    print(a)
+    return a
 
 
-bank(int(input('summa\n')), int(input('year\n')), int(input('percent\n')))
+print(bank())

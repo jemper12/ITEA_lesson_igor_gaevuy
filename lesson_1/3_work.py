@@ -10,5 +10,6 @@ def test_num(num):
 
 
 for number in range(101):
-    if number > 0:
-        test_num(number)
+    if number == 0:
+        continue
+    test_num(number)

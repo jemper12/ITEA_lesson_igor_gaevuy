@@ -6,6 +6,6 @@ dict_country = {
     'Ethiopia': 'Addis Ababa'
 }
 list_country = ['Nigeria', 'United Arab Emirates', 'Algeria', 'Andorra']
-for country in dict(dict_country):
+for country, city in dict_country.items():
     if country in list_country:
-        print(dict_country[country])
+        print(city)
