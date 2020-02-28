@@ -15,6 +15,11 @@ class Point:
         self._y = y
         self._z = z
 
+    """Унарный метод вычитания"""
+
+    def __neg__(self):
+        return Point("-" + str(self._x), "-" + str(self._y), "-" + str(self._z))
+
     """Сложение"""
 
     def __add__(self, other):
@@ -75,3 +80,7 @@ print(f'Result after div of zero method truediv {(point_1 / point_4).get_all_poi
 
 point_4.set_x(10)
 print(f'Result div after changes x method truediv {(point_1 / point_4).get_all_point_this()}')
+
+print(f'Result after mul method {(point_1 * point_4).get_all_point_this()}')
+
+print(f'Перегрузка унарного метода отнимания {(-point_1).get_all_point_this()}')
