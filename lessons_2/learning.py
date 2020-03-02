@@ -16,6 +16,28 @@ cat2 = Cat('cat', 5)
 
 cat3 = cat + cat2 + cat2
 print(cat3._name, cat3._weight)
+#################################
+
+
+from itertools import zip_longest
+
+to_square = lambda x, y: (x ** 2, y ** 2)
+
+list2 = [1, 2, 3, 4, 5]
+list1 = [6, 3, 4, 6, 2, 2]
+
+result = map(to_square, list1, list2)
+
+print(tuple(result))
+
+
+print(list(filter(lambda x: not x % 2, list1)))
+
+a = [5, 6, 7, 4]
+b = [3, 55, 7, 3, 1, 6]
+
+print(list(zip_longest(a, b, fillvalue=True)))
+
 ####################### 2 ###########################
 # class Phone:
 #     mobile_type = 'Common phone'
