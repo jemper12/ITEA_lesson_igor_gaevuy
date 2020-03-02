@@ -15,7 +15,7 @@ class Point:
         self._y = y
         self._z = z
 
-    """Унарный метод вычитания"""
+    """Унарный оператор вычитания"""
 
     def __neg__(self):
         return Point("-" + str(self._x), "-" + str(self._y), "-" + str(self._z))
@@ -83,4 +83,4 @@ print(f'Result div after changes x method truediv {(point_1 / point_4).get_all_p
 
 print(f'Result after mul method {(point_1 * point_4).get_all_point_this()}')
 
-print(f'Перегрузка унарного метода отнимания {(-point_1).get_all_point_this()}')
+print(f'Перегрузка унарного оператора отнимания {(-point_1).get_all_point_this()}')
