@@ -18,12 +18,12 @@ class DataStructures:
             print(f'\t{i + 1}) add {list_[i]}')
             self._deque.append(list_[i])
 
-    def out_all_as_fifo(self):
+    def out_all_as_FIFO(self):
         print('Out all elements as fifo:')
         for i in range(self._deque.__len__()):
             print(f'\t{i + 1}) {self._deque.popleft()}')
 
-    def out_all_as_lifo(self):
+    def out_all_as_LIFO(self):
         print('Out all elements as lifo:')
         for i in range(self._deque.__len__()):
             print(f'\t{i + 1}) {self._deque.pop()}')
@@ -33,10 +33,10 @@ init_deque = DataStructures()
 
 init_deque.add_item_to_deque()
 print(f'in {init_deque.get_deque()}')
-init_deque.out_all_as_fifo()
+init_deque.out_all_as_FIFO()
 print(f'in {init_deque.get_deque()}\n')
 
 init_deque.add_item_to_deque()
 print(f'in {init_deque.get_deque()}')
-init_deque.out_all_as_lifo()
+init_deque.out_all_as_LIFO()
 print(f'in {init_deque.get_deque()}\n')
