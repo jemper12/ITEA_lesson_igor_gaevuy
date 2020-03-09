@@ -16,9 +16,9 @@ class DataSteck:
 
     def out_item_from_steck(self):
         if self._steck.__len__() > 0:
-            self._steck.popleft()
+            return self._steck.popleft()
         else:
-            f'stack is empty'
+            return f'stack is empty'
 
 
 class DataQueue:
@@ -33,9 +33,9 @@ class DataQueue:
 
     def out_item_from_queue(self):
         if self._queue.__len__() > 0:
-            self._queue.pop()
+            return self._queue.pop()
         else:
-            f'queue is empty'
+            return f'queue is empty'
 
 
 steck_ = DataSteck()
