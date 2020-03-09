@@ -30,7 +30,6 @@ result = map(to_square, list1, list2)
 
 print(tuple(result))
 
-
 print(list(filter(lambda x: not x % 2, list1)))
 
 a = [5, 6, 7, 4]

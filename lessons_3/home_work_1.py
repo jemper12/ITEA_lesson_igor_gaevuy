@@ -4,39 +4,66 @@
 from collections import deque
 
 
-class DataStructures:
+class DataSteck:
     def __init__(self):
-        self._deque = deque()
+        self._steck = deque()
 
-    def get_deque(self):
-        return self._deque
+    def get_steck(self):
+        return self._steck
 
-    def add_item_to_deque(self):
-        print('add elements to deque')
-        list_ = ['Igor', 'Andrey', 'Ivan', 'Katya', 'Konstantyn']
-        for i in range(list_.__len__()):
-            print(f'\t{i + 1}) add {list_[i]}')
-            self._deque.append(list_[i])
+    def add_item_to_steck(self, item):
+        self._steck.append(item)
 
-    def out_all_as_FIFO(self):
-        print('Out all elements as fifo:')
-        for i in range(self._deque.__len__()):
-            print(f'\t{i + 1}) {self._deque.popleft()}')
-
-    def out_all_as_LIFO(self):
-        print('Out all elements as lifo:')
-        for i in range(self._deque.__len__()):
-            print(f'\t{i + 1}) {self._deque.pop()}')
+    def out_item_from_steck(self):
+        if self._steck.__len__() > 0:
+            self._steck.popleft()
+        else:
+            f'stack is empty'
 
 
-init_deque = DataStructures()
+class DataQueue:
+    def __init__(self):
+        self._queue = deque()
 
-init_deque.add_item_to_deque()
-print(f'in {init_deque.get_deque()}')
-init_deque.out_all_as_FIFO()
-print(f'in {init_deque.get_deque()}\n')
+    def get_queue(self):
+        return self._queue
 
-init_deque.add_item_to_deque()
-print(f'in {init_deque.get_deque()}')
-init_deque.out_all_as_LIFO()
-print(f'in {init_deque.get_deque()}\n')
+    def add_item_to_queue(self, item):
+        self._queue.append(item)
+
+    def out_item_from_queue(self):
+        if self._queue.__len__() > 0:
+            self._queue.pop()
+        else:
+            f'queue is empty'
+
+
+steck_ = DataSteck()
+
+steck_.add_item_to_steck(1)
+steck_.add_item_to_steck(2)
+steck_.add_item_to_steck(3)
+steck_.add_item_to_steck(4)
+
+print(steck_.get_steck())
+
+print(steck_.out_item_from_steck())
+print(steck_.out_item_from_steck())
+print(steck_.out_item_from_steck())
+print(steck_.out_item_from_steck())
+print(steck_.out_item_from_steck())
+
+queue_ = DataQueue()
+
+queue_.add_item_to_queue(1)
+queue_.add_item_to_queue(2)
+queue_.add_item_to_queue(3)
+queue_.add_item_to_queue(4)
+
+print(queue_.get_queue())
+
+print(queue_.out_item_from_queue())
+print(queue_.out_item_from_queue())
+print(queue_.out_item_from_queue())
+print(queue_.out_item_from_queue())
+print(queue_.out_item_from_queue())
