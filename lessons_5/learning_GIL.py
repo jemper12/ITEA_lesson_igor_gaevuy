@@ -46,3 +46,51 @@ t2.start()
 t.join()
 t2.join()
 print(time.time() - start)
+
+# list_of_threads = [Thread(target=time.sleep, args=(i,), name=f'name+{i}') for i in range(3)]
+#
+# for thread in list_of_threads:
+#     thread.start()
+#
+# for thread in list_of_threads:
+#     print(thread.is_alive())
+#     print(thread.getName())
+#     print(thread.setName(f'barab+{thread.getName()}'))
+#     print(thread.getName())
+
+a = []
+
+
+def carculate(i):
+    global a
+    a.append(i)
+
+
+list_of_threads = [Thread(target=carculate, args=(i,), name=f'name+{i}') for i in range(5)]
+
+for thread in list_of_threads:
+    thread.start()
+
+time.sleep(1)
+
+print(a)
+
+
+class MyThread(Thread):
+
+    def __init__(self, is_daemon):
+        super().__init__(daemon=is_daemon)
+        self.result = None
+        self.is_runing = True
+
+    def run(self):
+        time.sleep(3)
+        self.result = 3
+
+
+a = MyThread(False)
+
+a.start()
+
+a.join()
+print(a.result)
