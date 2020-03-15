@@ -47,12 +47,13 @@ while while_status:
     test = input(f'If u have find temperature for another day, input 1, if not input 2 fo exit\n')
     if test == '2':
         while_status = False
+
     elif test == '1':
         while_user_enter_date = True
         while while_user_enter_date:
             user_input_date = input('Please, enter date in format "2012-12-12"\n')
-            if re.match(r'^20[0-9][0-9]-[0-1][0-9]-[0-3][0-9]$', user_input_date):
 
+            if re.match(r'^20[0-9][0-9]-[0-1][0-9]-[0-3][0-9]$', user_input_date):
                 request_result = get_weather(user_input_date)
                 if request_result is not None:
                     print(f"""
@@ -61,6 +62,7 @@ while while_status:
                         max temperature = {request_result["max"]}
                     """)
                     while_user_enter_date = False
+
             elif user_input_date == '2':
                 while_user_enter_date = False
                 while_status = False
