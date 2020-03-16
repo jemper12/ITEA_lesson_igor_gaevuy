@@ -37,20 +37,18 @@ def get_weather(date):
 
 
 request_result = get_weather(date_now)
-while_status = True
 print(f"""
                         Hello, today {date_now}
                         min temperature = {request_result["min"]}
                         max temperature = {request_result["max"]}
                         """)
-while while_status:
+while True:
     test = input(f'If u have find temperature for another day, input 1, if not input 2 fo exit\n')
     if test == '2':
-        while_status = False
+        break
 
     elif test == '1':
-        while_user_enter_date = True
-        while while_user_enter_date:
+        while True:
             user_input_date = input('Please, enter date in format "2012-12-12"\n')
 
             if re.match(r'^20[0-9][0-9]-[0-1][0-9]-[0-3][0-9]$', user_input_date):
@@ -61,11 +59,10 @@ while while_status:
                         min temperature = {request_result["min"]}
                         max temperature = {request_result["max"]}
                     """)
-                    while_user_enter_date = False
+                    break
 
             elif user_input_date == '2':
-                while_user_enter_date = False
-                while_status = False
+                break
 
             else:
                 print(f'You enter "{user_input_date}", it`s invalid date, please try again, or enter 2 fo exit\n')
