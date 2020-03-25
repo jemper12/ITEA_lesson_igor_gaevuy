@@ -21,7 +21,13 @@ class Person(ABC):
 
     def __init__(self, second_name, birthday, faculty):
         self._second_name = second_name
-        self._age = datetime.now().year - datetime(birthday[0], birthday[1], birthday[2]).year
+        today = datetime.now()
+        birthday_data = datetime(birthday[0], birthday[1], birthday[2])
+        self._age = today.year - birthday_data.year
+        if today.month < birthday_data.month:
+            self._age -= 1
+        elif today.month == birthday_data.month and today.day < birthday_data.day:
+            self._age -= 1
         self._faculty = faculty
         self._birthday = f'{birthday[0]}/{birthday[1]}/{birthday[2]}'
 
@@ -35,8 +41,6 @@ class Person(ABC):
 
 
 class Entrant(Person):
-    def __init__(self, second_name, birthday, faculty):
-        super().__init__(second_name, birthday, faculty)
 
     @property
     def info(self):
@@ -94,7 +98,7 @@ experience = {self._experience}
 
 
 person_list.append(Entrant('Gaevuy', (1994, 6, 7), 'Engine'))
-person_list.append(Entrant('Galofastov', (1993, 4, 25), 'Engine'))
+person_list.append(Entrant('Galofastov', (1993, 2, 21), 'Engine'))
 person_list.append(Student('Ivanov', (1990, 12, 12), 'Engine', 4))
 person_list.append(Teacher('Golovan', (1975, 11, 19), 'Engine', 'teacher', 15))
 
@@ -104,5 +108,5 @@ for person in person_list:
 print('search for a person with an age of 25 years')
 
 for person in person_list:
-    if 20 < person.age < 27:
+    if 20 < person.age < 28:
         print(person.info, person.age)

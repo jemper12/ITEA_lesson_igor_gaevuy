@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+</head>
+<body>
+
+    {% for post in posts %}
+    <a href="/post/{{post.id}}">
+        <h4>{{post.title}}</h4>
+    </a>
+    <h5>{{post.author}}</h5>
+    <br>
+    {% endfor %}
+
+</body>
+</html>

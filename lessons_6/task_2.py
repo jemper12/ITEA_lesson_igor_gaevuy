@@ -6,8 +6,8 @@
 
 class MyDict:
 
-    def __init__(self, *kwargs):
-        self._my_dict = dict(*kwargs)
+    def __init__(self, *args):
+        self._my_dict = dict(*args)
 
     def get(self, value):
         if value in self.get_dict:
