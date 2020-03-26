@@ -1,0 +1,232 @@
+Who are you?
+	1) Admin
+	2) Student
+	3) This is a mistake. Where is the solution?
+1
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+1
+Please enter first name
+Test
+Please enter last name
+User
+Group list:
+	1) RPZ-311
+	2) RPZ-211
+	3) FIN-413
+	4) FIN-113
+	5) RPZ-111
+	6) SE-112
+	7) SE-212
+	8) SE-312
+Enter number correct group
+8
+Enter numbers student ticket, enter 9 numbers
+273856324
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+2
+----------------------------------------------------------------------------------------------------
+|ID|Ful name                      |Ticket   |Group  |Faculty             |Evaluation               |
+----------------------------------------------------------------------------------------------------
+|1 |Igor Gaevuy                   |123873812|RPZ-311|software development|5,5,5                    |
+|2 |Andrey Garage                 |423487287|RPZ-211|software development|4,4,5,5                  |
+|3 |Stiven Sigall                 |473847832|FIN-413|finance and audit   |3,2,5,3,5,5              |
+|4 |Georgiy Bagrationov           |123341423|RPZ-111|software development|5,5,4,3,5                |
+|5 |Ivan Mazepa                   |123445234|RPZ-311|software development|5,5,5                    |
+|6 |Inokentiy Thinkerman          |645645633|FIN-113|finance and audit   |5,5                      |
+|7 |Albert Thinkerman             |645773533|FIN-413|finance and audit   |5,5                      |
+|9 |Kostya Ivanov                 |665345233|FIN-413|finance and audit   |None                     |
+|12|Test User                     |273856324|SE-312 |software engineering|None                     |
+----------------------------------------------------------------------------------------------------
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+3
+Enter id student
+12
+Enter evaluation to student
+3
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+2
+----------------------------------------------------------------------------------------------------
+|ID|Ful name                      |Ticket   |Group  |Faculty             |Evaluation               |
+----------------------------------------------------------------------------------------------------
+|1 |Igor Gaevuy                   |123873812|RPZ-311|software development|5,5,5                    |
+|2 |Andrey Garage                 |423487287|RPZ-211|software development|4,4,5,5                  |
+|3 |Stiven Sigall                 |473847832|FIN-413|finance and audit   |3,2,5,3,5,5              |
+|4 |Georgiy Bagrationov           |123341423|RPZ-111|software development|5,5,4,3,5                |
+|5 |Ivan Mazepa                   |123445234|RPZ-311|software development|5,5,5                    |
+|6 |Inokentiy Thinkerman          |645645633|FIN-113|finance and audit   |5,5                      |
+|7 |Albert Thinkerman             |645773533|FIN-413|finance and audit   |5,5                      |
+|9 |Kostya Ivanov                 |665345233|FIN-413|finance and audit   |None                     |
+|12|Test User                     |273856324|SE-312 |software engineering|3                        |
+----------------------------------------------------------------------------------------------------
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+4
+Enter id student
+12
+Please enter first name
+User
+Please enter last name
+Test
+Group list:
+	1) RPZ-311
+	2) RPZ-211
+	3) FIN-413
+	4) FIN-113
+	5) RPZ-111
+	6) SE-112
+	7) SE-212
+	8) SE-312
+Enter number correct group
+8
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+2
+----------------------------------------------------------------------------------------------------
+|ID|Ful name                      |Ticket   |Group  |Faculty             |Evaluation               |
+----------------------------------------------------------------------------------------------------
+|1 |Igor Gaevuy                   |123873812|RPZ-311|software development|5,5,5                    |
+|2 |Andrey Garage                 |423487287|RPZ-211|software development|4,4,5,5                  |
+|3 |Stiven Sigall                 |473847832|FIN-413|finance and audit   |3,2,5,3,5,5              |
+|4 |Georgiy Bagrationov           |123341423|RPZ-111|software development|5,5,4,3,5                |
+|5 |Ivan Mazepa                   |123445234|RPZ-311|software development|5,5,5                    |
+|6 |Inokentiy Thinkerman          |645645633|FIN-113|finance and audit   |5,5                      |
+|7 |Albert Thinkerman             |645773533|FIN-413|finance and audit   |5,5                      |
+|9 |Kostya Ivanov                 |665345233|FIN-413|finance and audit   |None                     |
+|12|User Test                     |273856324|SE-312 |software engineering|3                        |
+----------------------------------------------------------------------------------------------------
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+5
+Enter id student
+12
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+2
+----------------------------------------------------------------------------------------------------
+|ID|Ful name                      |Ticket   |Group  |Faculty             |Evaluation               |
+----------------------------------------------------------------------------------------------------
+|1 |Igor Gaevuy                   |123873812|RPZ-311|software development|5,5,5                    |
+|2 |Andrey Garage                 |423487287|RPZ-211|software development|4,4,5,5                  |
+|3 |Stiven Sigall                 |473847832|FIN-413|finance and audit   |3,2,5,3,5,5              |
+|4 |Georgiy Bagrationov           |123341423|RPZ-111|software development|5,5,4,3,5                |
+|5 |Ivan Mazepa                   |123445234|RPZ-311|software development|5,5,5                    |
+|6 |Inokentiy Thinkerman          |645645633|FIN-113|finance and audit   |5,5                      |
+|7 |Albert Thinkerman             |645773533|FIN-413|finance and audit   |5,5                      |
+|9 |Kostya Ivanov                 |665345233|FIN-413|finance and audit   |None                     |
+----------------------------------------------------------------------------------------------------
+Ok, you are admin, what do you want to do?
+	1) Add new student
+	2) Get all student
+	3) Add evaluation on student
+	4) Edit student
+	5) Delete user
+	6) Logout
+6
+Who are you?
+	1) Admin
+	2) Student
+	3) This is a mistake. Where is the solution?
+2
+Ok, you are student, what do you want to do?
+	1) Get excellent student
+	2) Get all student
+	3) Find student ticket
+	4) Logout
+1
+---------------------------------------
+|Ful name                      |Ticket   |
+---------------------------------------
+|Igor Gaevuy                   |123873812|
+|Andrey Garage                 |423487287|
+|Stiven Sigall                 |473847832|
+|Georgiy Bagrationov           |123341423|
+|Ivan Mazepa                   |123445234|
+|Inokentiy Thinkerman          |645645633|
+|Albert Thinkerman             |645773533|
+---------------------------------------
+Ok, you are student, what do you want to do?
+	1) Get excellent student
+	2) Get all student
+	3) Find student ticket
+	4) Logout
+2
+-------------------------------------------------------------------------------------------------
+|Ful name                      |Ticket   |Group  |Faculty             |Evaluation               |
+-------------------------------------------------------------------------------------------------
+|Igor Gaevuy                   |123873812|RPZ-311|software development|5,5,5                    |
+|Andrey Garage                 |423487287|RPZ-211|software development|4,4,5,5                  |
+|Stiven Sigall                 |473847832|FIN-413|finance and audit   |3,2,5,3,5,5              |
+|Georgiy Bagrationov           |123341423|RPZ-111|software development|5,5,4,3,5                |
+|Ivan Mazepa                   |123445234|RPZ-311|software development|5,5,5                    |
+|Inokentiy Thinkerman          |645645633|FIN-113|finance and audit   |5,5                      |
+|Albert Thinkerman             |645773533|FIN-413|finance and audit   |5,5                      |
+|Kostya Ivanov                 |665345233|FIN-413|finance and audit   |None                     |
+-------------------------------------------------------------------------------------------------
+Ok, you are student, what do you want to do?
+	1) Get excellent student
+	2) Get all student
+	3) Find student ticket
+	4) Logout
+3
+Enter number ticket
+473847832
+-------------------------------------------------------------------------------------------------
+|Ful name                      |Ticket   |Group  |Faculty             |Evaluation               |
+-------------------------------------------------------------------------------------------------
+|Stiven Sigall                 |473847832|FIN-413|finance and audit   |3,2,5,3,5,5              |
+-------------------------------------------------------------------------------------------------
+Ok, you are student, what do you want to do?
+	1) Get excellent student
+	2) Get all student
+	3) Find student ticket
+	4) Logout
+4
+Who are you?
+	1) Admin
+	2) Student
+	3) This is a mistake. Where is the solution?
+3
