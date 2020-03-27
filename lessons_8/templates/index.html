@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{page_title}}</title>
-</head>
-<body>
-<h1>Hello</h1>
-<h2>World</h2>
-<h3>It`s me</h3>
-{% for user in name %}
-<p>{{user}}
-{% endfor %}
-</body>
-</html>
+{% extends 'base.html' %}
+{% block body %}
+    <br>
+    Select category:
+    <br>
+    <ul>
+        {% for foo in data %}
+            <li><a href="/category/{{ foo }}">{{ data[foo] }}</a></li>
+        {% endfor %}
+    </ul>
+
+
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+    <br>
+    Select product:
+    <br>
+    <ul>
+        {% for product in data %}
+            <li><a href="/product/{{ product }}">{{ data[product] }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

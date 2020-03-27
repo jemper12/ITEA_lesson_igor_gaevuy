@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block body %}
+    <style>
+
+        .main {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        {#border: 3px solid #73AD21;#}
+        }
+
+        .sub_main {
+            width: 49.5%;
+            position: absolute;
+            float: left;
+            height: 100%;
+            border: 1px solid #73AD21;
+        }
+
+        .two {
+            right: 0;
+        }
+
+        .to_form {
+        {#background: #73AD21;#} position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+
+    </style>
+    <div class="main">
+        <div class="sub_main">
+            <div class="to_form">
+                <form action="/admin" method="post" name="create category" id="1">
+                    Add category: <br><br>
+                    Name new category:<input type="text" name="category_name" placeholder="Enter category">
+                    <br><br>
+                    <button type="submit" form="1">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="sub_main two">
+            <div class="to_form">
+                <form action="/admin" method="post" name="create category" id="2">
+                    Create product: <br><br>
+                    Name product: <input type="text" name="product_name" placeholder="Enter name product"><br>
+                    Select status: <select name="status">
+                    {% for foo in status_dict %}
+                        <option value="{{ foo }}">{{ status_dict[foo] }}</option>
+                    {% endfor %}
+                </select>
+                    <br>
+                    Enter cost: <input type="text" name="cost" placeholder="Enter cost"><br>
+                    Enter quantity: <input type="text" name="quantity" placeholder="Enter quantity"><br>
+                    Select category: <select name="category">
+                    {% for foo in category_dict %}
+                        <option value="{{ foo }}">{{ category_dict[foo] }}</option>
+                    {% endfor %}
+                </select>
+                    <br>
+                    Description: <br>
+                    <input type="text" name="description" placeholder="Description"
+                           style="height: 150px; width: 300px;">
+                    <br><br>
+                    <button type="submit" form="2">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

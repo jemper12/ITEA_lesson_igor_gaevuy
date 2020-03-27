@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block body %}
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+    <a href="/category/{{ category_id }}">back to {{ category_name }}</a>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>{{ name }}</th>
+        </tr>
+        <tr>
+            <th>Cost</th>
+            <th>{{ cost }}UAH</th>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <th>{{ status }}</th>
+        </tr>
+        <tr>
+            <th>Category</th>
+            <th>{{ category_name }}</th>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <th>{{ quantity }}</th>
+        </tr>
+    <tr>
+        <th>Description</th>
+        <th>{{ description }}</th>
+    </tr>
+    </table>
+
+{% endblock %}
